@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Auth</title>
+</head>
+<body>
+
+<h2>Sign Up</h2>
+
+<form action="https://script.google.com/macros/s/AKfycby5kLzyfAhNGqF-I0HkjvcKXcDlr4XgzhWeyfxAcJf9veabDkP2bivT_waUDa_7y6S34w/exec"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+      target="hiddenFrame"
+      onsubmit="showMessage('Sign Up request sent ✅')">
+
+  <input type="text" name="searchValue" placeholder="Username" required><br><br>
+
+  <input type="text" name="macAddress" placeholder="MAC Address" required><br><br>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+
+<hr>
+
+<h2>Sign In</h2>
+
+<form action="https://script.google.com/macros/s/AKfycbyLZdgnhcErwev8SsidSTxcB4RUqnZK5czrT_mZd6WW1kFWh6dJsx_wNeMnBwFenRRT/exec"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+      target="hiddenFrame"
+      onsubmit="showMessage('Sign In request sent ✅')">
+
+  <input type="text" name="searchValue" placeholder="Username" required><br><br>
+
+  <input type="text" name="updateValue" placeholder="Value" required><br><br>
+
+  <button type="submit">Sign In</button>
+</form>
+
+
+<hr>
+
+<h3 id="result"></h3>
+
+<iframe name="hiddenFrame" style="display:none;"></iframe>
+
+<script>
+function showMessage(msg) {
+  document.getElementById("result").innerText = msg;
+}
+</script>
+
+</body>
+</html>
